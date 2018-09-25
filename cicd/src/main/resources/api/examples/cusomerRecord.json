@@ -1,0 +1,25 @@
+{  
+   "firstName":"Rajeev",
+   "lastName":"Alagarsamy",
+   "gender":"Male",
+   "dob":"1983-09-09",
+   "email":"rajeev.1883@gmail.com",
+   "phone":"7898881234",
+   "address":[  
+      {  
+         "add1":"1234 Main St",
+         "add2":"Palm Groove Apts",
+         "add3":"Apt No 2015",
+         "city":"Brandon",
+         "state":"FL",
+         "zip":"33551",
+         "country":"USA"
+      }
+   ],
+   "userId":"rajeev.1883",
+   "password":"password",
+   "securityQuestion":{  
+      "question":"rajeev",
+      "answer":"yes"
+   }
+}

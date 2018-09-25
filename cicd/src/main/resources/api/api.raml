@@ -1,0 +1,26 @@
+#%RAML 1.0
+version: v1
+title: cicd
+
+types:
+  customer:     !include dataTypes/customer.raml
+  success : !include dataTypes/SuccessMsg.raml
+  error : !include dataTypes/ErrorMsg.raml
+/customer:
+  get:
+    description: to query an user
+    queryParameters: 
+      userId:
+        type: string
+        required: false
+    responses: 
+      200:
+        body: 
+          application/json:
+            type: customer
+            example: !include examples/cusomerRecord.json
+      400:
+        body: 
+          application/json:
+            type: error
+            example: !include examples/ErrorResponse.json

@@ -1,0 +1,40 @@
+#%RAML 1.0 DataType
+type: object
+properties: 
+  firstName:
+    type: string
+    required: false
+  lastName:
+    type: string
+    required: false
+  gender:
+    type: string
+    required: false
+  dob:
+    type: string
+    required: false
+  email:
+    type: string
+    required: false
+  phone:
+    type: string
+    required: false
+  address:
+    type: array
+    items: !include address.raml
+  userId:
+    type: string
+    required: false
+  password:
+    type: string
+    required: false
+  securityQuestion:
+   type: object
+   properties: 
+     question:
+       type: string
+       required: false
+     answer:
+       type: string
+       required: false
+  
